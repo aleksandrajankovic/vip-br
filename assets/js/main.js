@@ -1,73 +1,73 @@
 let data = {
-    licniAsistent: [
+    DailyCashback: [
       {
-        title: "Lični asistent",
-        desc: "Vaš neprikosnoveni saveznik za optimalno iskustvo. Garantujemo vam brzu reakciju, a vaši upiti i zahtjevi će biti tretirani kao prioritet.",
-        image: "assets/icons/icon-1.svg"
+        title: "Cashback diário",
+        desc: "Ganhe até 10% de cashback diário sobre suas apostas do dia anterior.",
+        image: "assets/icons/DailyCashback.png"
       },
     ],
-    specijalniBonusi: [
+    FreeSpins: [
       {
-        title: "Specijalni bonusi",
-        desc: "Preuzmite ekskluzivne bonus pakete. Uživajte u ekskluzivnim poklonima, prilagođenim lično vama.",
-        image: "assets/icons/icon-2.svg"
+        title: "Rodadas grátis",
+        desc: "Receba rodadas grátis em jogos indicados.",
+        image: "assets/icons/FreeSpins.png"
       },
     ],
-    limiti: [
+    ExclusiveSupport: [
         {
-          title: "VEĆI LIMITI ISPLATA",
-          desc: "Pružamo vam posebnu priliku da otvorite put ka većim sumama i povećanim limitom podizanja novca.",
-          image: "assets/icons/icon-3.svg"
+          title: "Atendimento exclusivo",
+          desc: "Suporte rápido e personalizado para suas dúvidas e solicitações via Whatsapp.",
+          image: "assets/icons/ExclusiveSupport.png"
         },
       ],
-      rezervacijeAvion: [
+      WeeklyTournament: [
         {
-          title: "REZERVACIJE AVIONSKIH KARATA",
-          desc: "Samo jedan upit je dovoljan – omogućavamo brzu i efikasnu avionsku rezervaciju za VIP klijente.",
-          image: "assets/icons/icon-4.svg"
+          title: "Torneios semanais",
+          desc: "Aumente a emoção de suas apostas enquanto se diverte em nossos torneiros.",
+          image: "assets/icons/WeeklyTournament.png"
         },
       ],
-      rezervacijeUlaznice: [
+      WeeklyOffers: [
         {
-          title: "REZERVACIJE ULAZNICA",
-          desc: "Pružamo privilegovanu mogućnost rezervacije ulaznica za VIP klijente - pošaljite upit i garantujemo vam mjesto.",
-          image: "assets/icons/icon-5.svg"
+          title: "Ofertas semanais",
+          desc: "Receba com exclusividade ofertas semanais e maximize a possibilidade de ganhos.",
+          image: "assets/icons/WeeklyOffers.png"
         },
       ],
-      dodatneNagrade: [
+      MonthlyBenefits: [
         {
-          title: "DODATNE NAGRADE",
-          desc: "Nadmašujemo vaša očekivanja. Budite spremni za nova iznenađenja i poklone koji će vas očarati.",
-          image: "assets/icons/icon-6.svg"
+          title: "Benefícios mensais",
+          desc: "Superamos suas expectativas. Prepare-se para novas surpresas que vão encantar você.",
+          image: "assets/icons/MonthlyBenefits.png"
         },
       ],
       rankingSystem: {
-        silver: {
-          head : "VIP SILVER",
-          deposit: "deposit",
-          prise:" 500€ - 999€",
-          bulletOne: "Mjesečni bonusi ",
-          bulletTwo: "Rakeback ",
-          bulletThree: "Nedeljni bonusi"
+        ouro: {
+          head : "VIP OURO",
+          deposit: "",
+          prise:"GGR entre <br> R$ 1.500,00 e R$ 9.999,99",
+          bulletOne: "6% de cashback diário",
+          bulletTwo: "Torneios semanais",
+          bulletThree: "Ofertas semanais"
         },
-        gold: {
-          head : "VIP GOLD",
-          deposit: "deposit",
-          prise:" 1,000€ - 2,499€",
-          bulletOne: "Nedeljni cashback ",
-          bulletTwo: "Mjesečni bonus paketi ",
-          bulletThree: "Rakeback",
-          bulletFour: "Nedeljni bonusi"
+        platina: {
+          head : "VIP PLATINA",
+          deposit: "",
+          prise:" GGR entre <br> R$ 10.000,00 e R$ 29.999,99",
+          bulletOne: "8% de cashback diário ",
+          bulletTwo: "Torneios semanais ",
+          bulletThree: "Ofertas semanais",
+          bulletFour: "Benefícios mensais"
         },
-        platinum: {
-          head : "VIP PLATINUM",
-          deposit: "deposit",
-          prise:" > 2,500€ ",
-          bulletOne: "Nedeljni cashback ",
-          bulletTwo: "Mjesečni bonus paketi ",
-          bulletThree: "Rakeback",
-          bulletFour: "Nedeljni bonusi",
-          bulletFive: "Rast bonusa"
+        diamante: {
+          head : "VIP DIAMANTE",
+          deposit: "",
+          prise:" GGR acima de<br> R$ 30.000,00 ",
+          bulletOne: "10% de cashback diário ",
+          bulletTwo: "Atendimento exclusivo ",
+          bulletThree: "Torneios semanais",
+          bulletFour: "Ofertas semanais",
+          bulletFive: "Benefícios mensais"
         },
         
       }
@@ -95,6 +95,7 @@ let data = {
   
       popup.style.display = "block";
       popupContent.style.display = "flex";
+      popupContent.style.justifyContent="center";
   
       let contentData = data[content][0];
       let contentHTML = generateHTML(contentData, id);
@@ -142,16 +143,16 @@ let data = {
 
   
   document.addEventListener("DOMContentLoaded", function () {
-    renderContent("licniAsistent", "licniAsistent", "asisstent-btn");
-    renderContent("specijalniBonusi", "specijalniBonusi", "bonus-btn");
-    renderContent("limiti", "limiti", "limit-btn");
-    renderContent("rezervacijeAvion", "rezervacijeAvion", "rezervacije-btn");
-    renderContent("rezervacijeUlaznice", "rezervacijeUlaznice", "ulaznice-btn");
-    renderContent("dodatneNagrade", "dodatneNagrade", "nagrade-btn");
+    renderContent("DailyCashback", "DailyCashback", "cashback-btn");
+    renderContent("FreeSpins", "FreeSpins", "spins-btn");
+    renderContent("ExclusiveSupport", "ExclusiveSupport", "support-btn");
+    renderContent("WeeklyTournament", "WeeklyTournament", "tournament-btn");
+    renderContent("WeeklyOffers", "WeeklyOffers", "offers-btn");
+    renderContent("MonthlyBenefits", "MonthlyBenefits", "monthly-btn");
   });
 
   function generateHTMLRanking(rankingData) {
-    let html = '';
+    let html = ' <div class="text-box-heading-2"><p>Desbloqueie vantagens exclusivas enquanto se diverte em seus jogos favoritos!</p></div><div class="box-wrapper">';
     
     for (let rank in rankingData) {
       html += `<div class="box">
@@ -164,26 +165,26 @@ let data = {
       
   
       if (rankingData[rank].bulletOne !== undefined) {
-        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletOne}</li>`;
+        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletOne}</li>`;
       }
       if (rankingData[rank].bulletTwo !== undefined) {
-        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletTwo}</li>`;
+        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletTwo}</li>`;
       }
       if (rankingData[rank].bulletThree !== undefined) {
-        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletThree}</li>`;
+        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletThree}</li>`;
       }
       if (rankingData[rank].bulletFour !== undefined) {
-        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFour}</li>`;
+        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFour}</li>`;
       }
       if (rankingData[rank].bulletFive !== undefined) {
-        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFive}</li>`;
+        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFive}</li>`;
       }
       
       html += `</ul></div>
         </div>
       </div>`;
     }
-    
+    html += `</div>`; 
     return html;
   }
   

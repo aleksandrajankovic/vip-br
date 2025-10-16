@@ -165,19 +165,19 @@ let data = {
       
   
       if (rankingData[rank].bulletOne !== undefined) {
-        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletOne}</li>`;
+        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletOne}</li>`;
       }
       if (rankingData[rank].bulletTwo !== undefined) {
-        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletTwo}</li>`;
+        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletTwo}</li>`;
       }
       if (rankingData[rank].bulletThree !== undefined) {
-        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletThree}</li>`;
+        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletThree}</li>`;
       }
       if (rankingData[rank].bulletFour !== undefined) {
-        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFour}</li>`;
+        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFour}</li>`;
       }
       if (rankingData[rank].bulletFive !== undefined) {
-        html += `<li class="list-box"><img src="/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFive}</li>`;
+        html += `<li class="list-box"><img src="/vip/assets/icons/bullet.svg" alt="Icon">${rankingData[rank].bulletFive}</li>`;
       }
       
       html += `</ul></div>

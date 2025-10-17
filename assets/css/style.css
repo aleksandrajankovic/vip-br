@@ -200,7 +200,7 @@ ul {
   align-items: center;
   padding: 60px;
   overflow: hidden;
-  background-image: linear-gradient(180deg, #4c0000 52.14%, #760000 100%);
+  background-image: linear-gradient(0deg, #4c0000 52.14%, #760000 100%);
 }
 
 .cta-inner {
